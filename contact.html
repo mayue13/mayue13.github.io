@@ -1,0 +1,83 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/con-style.css">
+		<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+		<link rel="stylesheet" href="css/logincss.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
+
+    </head>
+
+    <body>
+
+        <div class="header">
+           
+
+            <h1> <img class="logo-img" src="images/logo.png" alt=""> Drainage Choke-Up Supervision</h1>
+            
+          </div>
+
+        <div class="topnav" id="myTopnav">
+            
+            <a  href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="file_complaint.html" >File Complaint</a>
+            <a href="#contact">Contact</a> 
+            <a href="login.html" style="float:right">Login</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>     </a>       
+
+        </div>
+		
+		<div class="wrapper " style="background-image: url('C:\Users\mayurd2\Documents\SRC_Project\DNC System\images');">
+		<div id="formContent">
+              <!-- Tabs Titles -->
+              <h2 class="active" style="text-decoration: none;"> Contact Us</h2>
+                        
+              <!-- Icon -->
+              
+          
+              <!-- Login Form -->
+              <form>
+				
+                <input type="text" id="name" class="fadeIn second" name="name" placeholder="name">
+				
+                <input type="email" id="email" class="fadeIn third" name="email" placeholder="email">
+				
+				<input type="tel" id="tel" class="fadeIn third" name="mobile" placeholder="mobile" pattern="[789][0-9]{9}" required>
+                
+				<input type="text" id="message" class="fadeIn second" name="name" placeholder="message">
+				<input type="submit" class="fadeIn fourth" value="Submit">
+              </form>
+          
+              <!-- Remind Passowrd -->
+              <div id="formFooter">
+                <a class="underlineHover" href="#"></a>
+              
+              </div>
+          </div>
+            </div>
+
+        
+        
+
+        <div class="footer">
+            <h6 style="color: white;">© 2019 | All Rights Reserved</h6>
+          </div>
+
+    </body>
+
+</html>

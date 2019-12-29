@@ -1,0 +1,143 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/logincss.css">
+		<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+
+            function openTab(evt, userName) {
+              var i, tabcontent, tabbutton;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                 tabcontent[i].style.display = "none";
+              }
+              tabbutton = document.getElementsByClassName("tabbutton");
+              for (i = 0; i < tabbutton.length; i++) {
+                tabbutton[i].className = tabbutton[i].className.replace(" active", "");
+              }
+              document.getElementById(userName).style.display = "block";
+              evt.currentTarget.className += " active";
+             }
+            </script>
+
+    </head>
+
+    <body>
+
+        <div class="header" >
+           
+
+            <h1> <img class="logo-img" src="images/logo.png" alt=""> Drainage Choke-up Supervision </h1>
+            
+          </div>
+
+        <div class="topnav" id="myTopnav">
+            
+            <a  href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="file_complaint.html" >File Complaint</a>
+                    
+
+            <a href="contact.html">Contact</a> 
+                                 
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>     </a>       
+
+        </div>
+
+        <div class="wrapper fadeInDown">
+          <div id="formContent">
+            <!-- Tabs Titles -->
+        
+            <button class="tabbutton" onclick="openTab(event, 'mco')"> <h6 class="active ">Officer Sign In</h6></button>
+            <button class="tabbutton" onclick="openTab(event, 'cor')"> <h6 class="inactive underlineHover">Corporator Sign In</h6></button>
+            <button class="tabbutton" onclick="openTab(event, 'con')"> <h6 class="inactive underlineHover">Contractor Sign In</h6></button>
+                      
+            <div id="ms-s">
+              <div id="mco" class="tabcontent">
+           
+                <div class="fadeIn first">
+                  <img src="images/off2.png" id="icon" alt="User Icon" />
+                </div>
+        
+                <!-- Login Form -->
+                <form action="mc_officer.html">
+                 <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+                 <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+                 <input type="submit" class="fadeIn fourth" value="Log In">
+                 </form>
+        
+                <!-- Remind Passowrd -->
+               <div id="formFooter">
+                 <a class="underlineHover" href="#">Forgot Password ?</a> &nbsp&nbsp&nbsp|&nbsp&nbsp
+                 <a class="underlineHover" href="adminlog.html">Are you Admin ?</a>
+               </div>
+              </div>
+
+              <div id="cor" class="tabcontent">
+           
+                <div class="fadeIn first">
+                  <img src="images/log1.png" id="icon" alt="User Icon" />
+                </div>
+        
+                <!-- Login Form -->
+                <form action="corporator_operation.html">
+                 <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+                 <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+                 <input type="submit" class="fadeIn fourth" value="Log In">
+                 </form>
+        
+                <!-- Remind Passowrd -->
+               <div id="formFooter">
+                 <a class="underlineHover" href="#">Forgot Password ?</a> &nbsp&nbsp&nbsp|&nbsp&nbsp
+                 <a class="underlineHover" href="adminlog.html">Are you Admin ?</a>
+               </div>
+              </div>
+
+              <div id="con" class="tabcontent">
+           
+                <div class="fadeIn first">
+                  <img src="images/con1.jpg" id="icon" alt="User Icon" />
+                </div>
+        
+                <!-- Login Form -->
+                <form action="contractor_operation.html">
+                 <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+                 <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+                 <input type="submit" class="fadeIn fourth" value="Log In">
+                 </form>
+        
+                <!-- Remind Passowrd -->
+               <div id="formFooter">
+                 <a class="underlineHover" href="#">Forgot Password ?</a> &nbsp&nbsp&nbsp|&nbsp&nbsp
+                 <a class="underlineHover" href="adminlog.html">Are you Admin ?</a>
+               </div>
+              </div>
+
+            </div>
+          
+          </div>
+        </div>
+
+        
+        
+
+        <div class="footer">
+            <h6 style="color: white;">© 2019 | All Rights Reserved</h6>
+          </div>
+
+    </body>
+
+</html>
